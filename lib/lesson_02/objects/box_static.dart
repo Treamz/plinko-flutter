@@ -23,6 +23,8 @@ class BoxStatic extends BodyComponent with ContactCallbacks {
       ..createFixture(fixtureDef);
       // ..angularVelocity = radians(180);
   }
+
+
   @override
   void beginContact(Object other, Contact contact) {
     print("other $other");

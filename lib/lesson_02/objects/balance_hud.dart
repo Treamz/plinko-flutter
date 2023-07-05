@@ -8,7 +8,7 @@ TextStyle(fontSize: 50, color: BasicPalette.white.color);
 final _regular = TextPaint(style: _regularTextStyle);
 final _box = _regular.copyWith(
       (style) => style.copyWith(
-    color: Colors.lightGreenAccent,
+    color: Colors.orange,
     fontFamily: 'Arial',
     letterSpacing: 1.0,
   ),
@@ -37,7 +37,7 @@ class MyTextBox extends TextBoxComponent {
   @override
   void render(Canvas canvas) {
     final rect = Rect.fromLTWH(0, 0, width, height);
-    canvas.drawRect(rect, Paint()..color = Colors.white10);
+    canvas.drawRect(rect, Paint()..color = Colors.transparent);
     super.render(canvas);
   }
 

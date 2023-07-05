@@ -10,7 +10,7 @@ class RightWallStatic extends BodyComponent {
       type: BodyType.static,
     );
 
-    final shape = EdgeShape()..set(Vector2.zero(), Vector2(worldSize.x, -400));
+    final shape = PolygonShape()..setAsBoxXY(.05, worldSize.y);
     final fixtureDef = FixtureDef(shape);
     return world.createBody(bodyDef)..createFixture(fixtureDef);
   }

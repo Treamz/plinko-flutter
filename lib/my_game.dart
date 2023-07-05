@@ -88,7 +88,7 @@ class _Background extends PositionComponent {
 
   @override
   void render(Canvas canvas) {
-    canvas.drawRect(Rect.fromLTWH(0, 0, size.x, size.y), blackPaint);
+    // canvas.drawRect(Rect.fromLTWH(0, 0, size.x, size.y), blackPaint);
   }
 }
 
